@@ -1,0 +1,22 @@
+.formEl{
+    width: 1200px;
+    border: 1px solid;
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.card{
+    display: flex;
+    width: 100%;
+    margin:0 auto;
+    justify-content: center;
+    /* flex-direction: column; */
+}
+.box{
+    border: 1px solid;
+    display: flex;
+    width: 40%;
+    flex-direction: column;
+}

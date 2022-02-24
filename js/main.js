@@ -21,7 +21,7 @@ formEl.addEventListener('submit',function(evt){
     planeEl.textContent=getTime(distance,PLANE)//vaqtni topilishi va hmlga uzatilishi 
 })
 //bu funksiya vatqni topish funksiyasi masofani tezlikka bo'lib beradi
-function getTime(speed,input){
+function getTime(speed,input){ //speed bu yerda kiritilayotgan masofa ,input bu o'rtacha tezligi
     let time =speed/input //topilish jarayoni
     return normalizeTime(time) // va bizga qaytarsin shu natijani
 }
@@ -32,4 +32,4 @@ function normalizeTime (time){
     let minute =Math.ceil((time-hour)*60) //minutga aylantrilishi
     let hourString =!hour ? `` : `${hour} soat` // va chiroyli xolatga op kelinishi
     return hourString +"  "+ `${minute} minut`// va bizga shu natijani qaytarsin
-}
+}//

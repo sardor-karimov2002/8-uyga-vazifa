@@ -22,13 +22,14 @@ formEl.addEventListener('submit',function(evt){
 })
 //bu funksiya vatqni topish funksiyasi masofani tezlikka bo'lib beradi
 function getTime(speed,input){
-    let time =input/speed //topilish jarayoni
+    let time =speed/input //topilish jarayoni
     return normalizeTime(time) // va bizga qaytarsin shu natijani
 }
 // chiqgan natijanini yani vaqtni saotga minutga aytlantrish uchun function yozildi
 function normalizeTime (time){
     let hour = Math.floor(time) //soatga aytlantrilishi
+    console.log(hour)
     let minute =Math.ceil((time-hour)*60) //minutga aylantrilishi
     let hourString =!hour ? `` : `${hour} soat` // va chiroyli xolatga op kelinishi
-    return hourString + `${minute} minut`// va bizga shu natijani qaytarsin
+    return hourString +"  "+ `${minute} minut`// va bizga shu natijani qaytarsin
 }
